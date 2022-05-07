@@ -1,0 +1,25 @@
+// TYPOGRAPHY
+$main-color:gold;
+$header-accent:teal;
+$content-color:white;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url("./Images/Space.jpg") repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+        .main-container{
+
+        }
+    }
+}
