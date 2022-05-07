@@ -144,6 +144,81 @@ span,p{
                     }
                 }
             }
+            .about-container{
+                padding: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .about-nfts{
+                    display: grid;
+                    grid-template-columns: auto auto auto auto;
+                    gap:1rem;
+                    margin-bottom: 2rem;
+                    img{
+                        width: 5rem;
+                        border-radius: 1rem;
+                    }
+                }
+                .about-information{
+                    padding: 1rem;
+                    .about-header{
+                            color: $main-color;
+                            text-align: start;
+                            font-size: 2rem;
+                            margin-bottom: 1rem;
+                    }  
+                    .about-information{
+                        font-size: 1.5rem;
+                        line-height: 2rem;
+                    }
+                }
+            }
+            .faq{
+                padding: 2rem;
+                .faq-header{
+                    margin-bottom: 2rem;
+                }
+                .faq-card{
+                    width: 100%;
+                    border-bottom: 2px solid white;
+                    padding-bottom: 1rem;
+                    .faq-visible{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        h4{
+                            font-size: 1.5rem;
+                            color: white;
+                        }
+                        .icons-faq{
+                            width: 3rem;
+                            height: 3rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            div{
+                                width: 2rem;
+                                height: 3px;
+                                background: white;
+                                border-radius: 1rem;
+                            }
+                            .top-span-faq{
+                                transform: rotate(90deg);
+                            }
+                            .bottom-span-faq{
+                                transform: translateY(-2px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            img{
+                width: 5rem;
+            }
         }
     }
 }
