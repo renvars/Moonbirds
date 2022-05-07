@@ -3,11 +3,30 @@ $main-color:gold;
 $header-accent:teal;
 $content-color:white;
 
+
+
+// GENERAL FONTS/COLORS
+h1{
+    color: $header-accent;
+    font-size: 2rem;
+}
+h4{
+    color: $header-accent;
+
+}
+h2{
+    color: $main-color;
+    font-size: 2rem;
+}
+span,p{
+    color: $content-color;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     body{
+        padding: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -19,7 +38,112 @@ $content-color:white;
         background-size: cover;
         
         .main-container{
-
+            .header-container{
+                margin-bottom: 1rem;
+                padding: 1rem;
+                text-align: end;
+                h1{
+                    font-size: 3rem;
+                }
+            }
+            .mint-container{    
+                padding: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .main-mint{
+                    width: 100%;
+                    padding-top: 3rem;
+                    background-color: rgb(17, 17, 121);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border-radius: 2rem 2rem 0rem 0rem;
+                    img{
+                        width: 10rem;
+                        border-radius: 50%;
+                        border: 4px solid rgb(118, 118, 226);
+                    }
+                    p{
+                        margin: 1rem 0rem;
+                        font-size: 1.5rem;
+                    }
+                    .main-mint-info{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        margin-bottom: 2rem;
+                        .connect-web3{
+                            width: 12rem;
+                            height: 4rem;
+                            margin-bottom: 1rem;
+                            font-size: 2rem;
+                            background-color: transparent;
+                            border:none;
+                            background-color: rgb(49, 49, 240);
+                            border-radius: 1rem;
+                            color: $content-color;
+                        }
+                        .mint-amount-info{
+                            margin-top: 1rem;
+                            margin-bottom: 2rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: row;
+                            button{
+                                height: 3rem;
+                                width: 3rem;
+                                border: none;
+                                background-color: rgb(49, 49, 240);
+                                border-radius: 20%;
+                            }
+                            span{
+                                margin: 0rem 1rem;
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+                .mint-find{
+                    border-radius: 0rem 0rem 2rem 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    background-color: rgb(8, 8, 55);
+                    img{
+                        margin-top: 2rem;
+                        width: 10rem;
+                        border-radius: 50%;
+                        background-color: rgb(17, 17, 121);
+                    }
+                    .mint-find-info{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        .mint-find-header{
+                            margin: 1rem;
+                            color: $main-color;
+                        }
+                        .mind-find-button{
+                            margin:2rem 0rem;
+                            height: 4rem;
+                            width: 10rem;
+                            border-radius: 1rem;
+                            font-size: 2rem;
+                            border: none;
+                            background-color: rgb(17, 17, 121);
+                            color: white;
+                        }
+                    }
+                }
+            }
         }
     }
 }
