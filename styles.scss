@@ -3,12 +3,16 @@ $main-color:gold;
 $header-accent:teal;
 $content-color:white;
 
-
+@font-face {
+    font-family: "GazpachoBlack";
+    src: url("./GazpachoBlack.otf") format("opentype");
+}
 
 // GENERAL FONTS/COLORS
 h1{
     color: $header-accent;
     font-size: 2rem;
+    font-family: "GazpachoBlack",serif;
 }
 h4{
     color: $header-accent;
@@ -20,6 +24,10 @@ h2{
 }
 span,p{
     color: $content-color;
+    font-weight: bold;
+}
+button {
+    cursor: pointer;
 }
 * {
     margin: 0;
@@ -216,6 +224,14 @@ span,p{
                             }
                         }
                     }
+                    .faq-hidden{
+                        .faq-p{
+                            transform: translate(-150px);
+                            transition: 0.5s ease-in-out;
+                            display: none;
+                            font-size: 1.2rem;
+                        }
+                    }
                 }
             }
         }
@@ -244,4 +260,82 @@ span,p{
             }
         }
     }
+}
+
+
+@media (min-width:900px){
+    *{
+        body{
+            margin-top: 6rem;
+            .main-container{
+                .header-container{
+                    text-align: center;
+                    h1{
+                        font-size: 4rem;
+    
+                    }
+                    h4{
+                        font-size: 2rem;
+                    }
+                }
+                .mint-container{
+                    margin-left: 20%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 60%;
+                    height: 100%;
+                    .main-mint{
+                        border-radius: 2rem 0rem 0rem 2rem;
+                    }
+                    .mint-find{
+                        border-radius: 0rem 2rem 2rem 0rem;
+                        height: 536px;
+                        max-width: 40%;
+                    }
+                }
+                .about-container{
+                    margin-left: 10%;
+                    margin-top: 10rem;
+                    flex-direction: row;
+                    max-width: 80%;
+                    .about-nfts{
+                        img{
+                            width: 8rem;
+                        }
+                    }
+                    .about-information{
+                        
+                        .about-header{
+                            font-size: 3rem;
+                        }
+                        .about-information{
+                            font-size: 2.5rem;
+                            line-height: 3rem;
+                        }
+                    }
+                }
+                .faq{
+
+                    margin-top: 6rem;
+                    .faq-header{
+                        font-size: 4rem;
+                        text-align: center;
+                    }
+                    .faq-card{
+                        margin-left: 20%;
+                        width: 60%;
+                        h4{
+                            font-size: 2.5rem;
+                        }
+                        .icons-faq{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

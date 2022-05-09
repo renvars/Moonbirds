@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "GazpachoBlack";
+  src: url("./GazpachoBlack.otf") format("opentype");
+}
+
 h1 {
   color: teal;
   font-size: 2rem;
+  font-family: "GazpachoBlack",serif;
 }
 
 h4 {
@@ -14,6 +20,11 @@ h2 {
 
 span, p {
   color: white;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
 }
 
 * {
@@ -337,6 +348,15 @@ span, p {
           transform: translateY(-2px);
 }
 
+* body .main-container .faq .faq-card .faq-hidden .faq-p {
+  -webkit-transform: translate(-150px);
+          transform: translate(-150px);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  display: none;
+  font-size: 1.2rem;
+}
+
 * body footer {
   padding: 0;
   border-top: 2px solid white;
@@ -373,5 +393,82 @@ span, p {
 
 * body footer .updates span {
   font-size: 1.2rem;
+}
+
+@media (min-width: 900px) {
+  * body {
+    margin-top: 6rem;
+  }
+  * body .main-container .header-container {
+    text-align: center;
+  }
+  * body .main-container .header-container h1 {
+    font-size: 4rem;
+  }
+  * body .main-container .header-container h4 {
+    font-size: 2rem;
+  }
+  * body .main-container .mint-container {
+    margin-left: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 60%;
+    height: 100%;
+  }
+  * body .main-container .mint-container .main-mint {
+    border-radius: 2rem 0rem 0rem 2rem;
+  }
+  * body .main-container .mint-container .mint-find {
+    border-radius: 0rem 2rem 2rem 0rem;
+    height: 536px;
+    max-width: 40%;
+  }
+  * body .main-container .about-container {
+    margin-left: 10%;
+    margin-top: 10rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 80%;
+  }
+  * body .main-container .about-container .about-nfts img {
+    width: 8rem;
+  }
+  * body .main-container .about-container .about-information .about-header {
+    font-size: 3rem;
+  }
+  * body .main-container .about-container .about-information .about-information {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  * body .main-container .faq {
+    margin-top: 6rem;
+  }
+  * body .main-container .faq .faq-header {
+    font-size: 4rem;
+    text-align: center;
+  }
+  * body .main-container .faq .faq-card {
+    margin-left: 20%;
+    width: 60%;
+  }
+  * body .main-container .faq .faq-card h4 {
+    font-size: 2.5rem;
+  }
+  * body .main-container .faq .faq-card .icons-faq {
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
