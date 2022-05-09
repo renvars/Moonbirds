@@ -314,6 +314,10 @@ span, p {
           flex-direction: column;
 }
 
+* body .main-container .faq .faq-card .faq-visible .icons-faq input {
+  display: none;
+}
+
 * body .main-container .faq .faq-card .faq-visible .icons-faq div {
   width: 2rem;
   height: 3px;
@@ -322,6 +326,8 @@ span, p {
 }
 
 * body .main-container .faq .faq-card .faq-visible .icons-faq .top-span-faq {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
@@ -331,7 +337,41 @@ span, p {
           transform: translateY(-2px);
 }
 
+* body footer {
+  padding: 0;
+  border-top: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 * body footer img {
-  width: 5rem;
+  width: 3rem;
+}
+
+* body footer .owner-info p {
+  color: white;
+  z-index: 5;
+  font-size: 1.2rem;
+}
+
+* body footer .updates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+* body footer .updates span {
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=styles.css.map */
