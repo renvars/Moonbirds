@@ -46,6 +46,7 @@ button {
         background-size: cover;
         
         .main-container{
+
             .header-container{
                 margin-bottom: 1rem;
                 padding: 1rem;
@@ -291,7 +292,7 @@ button {
                     }
                     .mint-find{
                         border-radius: 0rem 2rem 2rem 0rem;
-                        height: 536px;
+                        height: 530px;
                         max-width: 40%;
                     }
                 }
@@ -334,7 +335,18 @@ button {
                         }
                     }
                 }
+
             }
+            footer{
+                padding-top: 1rem;
+                justify-content: space-evenly;
+                width: 100%;
+                .updates{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+             }
         }
     }
 

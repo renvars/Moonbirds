@@ -431,7 +431,7 @@ button {
   }
   * body .main-container .mint-container .mint-find {
     border-radius: 0rem 2rem 2rem 0rem;
-    height: 536px;
+    height: 530px;
     max-width: 40%;
   }
   * body .main-container .about-container {
@@ -469,6 +469,24 @@ button {
   }
   * body .main-container .faq .faq-card .icons-faq {
     cursor: pointer;
+  }
+  * body footer {
+    padding-top: 1rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+  }
+  * body footer .updates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */
